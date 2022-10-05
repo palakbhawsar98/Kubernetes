@@ -38,3 +38,13 @@ kubectl get pods -o wide
 ```bash
 kubectl create -f pod-definition.yml
 ```
+##### Delete Pod
+
+```bash
+kubectl delete pod pod-name
+```
+##### Edit Pod
+
+```bash
+kubectl edit pod pod-name
+```
