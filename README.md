@@ -1,27 +1,17 @@
-# Introduction
+## Kubernetes Commands
 
-## Kubernetes
-Kubernetes is an open-source container management also known as container orchestration tool for automating software deployment, scaling, and management.
+### kubectl
+Kubectl is a Command line tool for communicating with a Kubernetes cluster.
 
-## Container Orchestration
-Orchestration enables developers to easily build containerized applications and services, as well as scale, schedule and monitor those containers.
+##### Kubernetes version running on nodes
 
-## Nodes
-Nodes are physical or virtual machine in which kubernetes is installed.
+```bash
+kubectl version
+```
+##### Number of nodes
 
-## Cluster
-Cluster is group of nodes, if one node fails we have our application accessible from other nodes.
+```bash
+kubectl get nodes
+```
 
-## Master
-Master is other node in which kubernetes is installed and it manages other nodes
 
-## Components
-- API Server
-- etcd
-- kubelet
-- Container Runtime
-- Controller
-- Scheduler
-
-## Master V/S Worker node
-Master has kube-apiserver installed and nodes have kubelet installed (Kubelet is an agent which make sure nodes are healthy) which provides information to master which stores information in etcd (key value storage)
