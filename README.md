@@ -13,5 +13,23 @@ kubectl version
 ```bash
 kubectl get nodes
 ```
+##### Command to create a pod and deploy docker container in PODs
 
+```bash
+kubectl run mysql --image mysql
+```
+##### List of PODS in Cluster
 
+```bash
+kubectl get pods
+```
+##### Get information about POD
+
+```bash
+kubectl describe pod mysql
+```
+##### Additional Information about POD
+
+```bash
+kubectl get pods -o wide
+```
