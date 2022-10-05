@@ -8,3 +8,29 @@ The yml files contain four top level fields-
 - kind: Type of object we want to create such as Pod
 - metadata: Data about the object like name, labels and app.
 - spec: Specification 
+
+#### Create replica sets
+
+```
+kubectl create -f replicaset.yml
+```
+#### Get replica sets
+
+```
+kubectl get replicaset
+```
+#### Delete replica sets
+
+```
+kubectl delete replicaset replicaset-name
+```
+#### Replace replica sets
+
+```
+kubectl replace -f replicaset.yml
+```
+#### Scale replica sets
+
+```
+kubectl scale -replicas=6 -f replicaset.yml
+```
