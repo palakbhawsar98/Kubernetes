@@ -33,3 +33,8 @@ kubectl describe pod mysql
 ```bash
 kubectl get pods -o wide
 ```
+##### Create POD using pod-definition.yml file
+
+```bash
+kubectl create -f pod-definition.yml
+```
