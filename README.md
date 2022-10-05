@@ -31,5 +31,14 @@ Minikube is a lightweight Kubernetes implementation that creates a VM on your lo
 - Download kubectl and minikube to start using minikube
 
 ## PODS
-
 A Pod is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
+
+## Replication Controllers
+
+Replication Controller used for high availability, it ensures that a specified number of pod replicas are running at any one time. It also helps load balancing and scaling when demand increases.
+
+## ReplicaSets
+ReplicaSets replaced replication controllers. A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.
+
+
+
