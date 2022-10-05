@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql
+  labels:
+    app: fitnessapp
+    type: database
+spec:      
+  contaniners:
+  - name: mysql
+    image: mysql
+  - name: tomcat
+    image: tomcat  
